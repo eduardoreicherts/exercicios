@@ -1,31 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    background: radial-gradient(white , rgb(194, 212, 252));
+}
+
+img {
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+h4{
+    padding-left: 54px;
 }
 
 td {
     text-align: center;
 }
 
-#formulario {
-    width: 230px;
+div {
+    width: 400px;
     height: 150px;
     display: flex;
     flex-direction: column;
-    box-shadow:0px 0 20px black;
-    align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    align-items: center;
     margin: 20px;
+    box-shadow:0 0 20px black;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: aliceblue;
 }
 
-#formulario > p {
+div > p {
     text-align: center;
 }
 
-#formulario > label {
+div > label {
     text-align: center;
     padding-bottom: 10px;
 }
