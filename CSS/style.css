@@ -15,8 +15,8 @@ body {
 img {
     width: 100px;
     border-radius: 50%;
-    border: 2px solid white;
-    animation-duration: 3s;
+    border: 3px solid white;
+    animation-duration: 10s;
     animation-name: img-animation;
     animation-iteration-count: infinite;
 }
@@ -35,21 +35,6 @@ img {
                 transform: rotate3d(1, 1, 0, -360deg);
       }
     }
-    @keyframes rotate-diagonal-1 {
-      0% {
-        -webkit-transform: rotate3d(1, 1, 0, 0deg);
-                transform: rotate3d(1, 1, 0, 0deg);
-      }
-      50% {
-        -webkit-transform: rotate3d(1, 1, 0, -180deg);
-                transform: rotate3d(1, 1, 0, -180deg);
-      }
-      100% {
-        -webkit-transform: rotate3d(1, 1, 0, -360deg);
-                transform: rotate3d(1, 1, 0, -360deg);
-      }
-}
-
 
 h4{
     padding-left: 54px;
@@ -67,14 +52,16 @@ div {
     justify-content: center;
     align-items: center;
     margin: 20px;
-    box-shadow:0 0 20px black;
+    box-shadow:0 0 20px rgb(103, 103, 103);
     border-radius: 10px;
     padding: 10px;
     background-color: rgb(194, 212, 252);
+    border: 1px solid white;
 }
 
 div > p {
     text-align: center;
+    font-weight: 900;
 }
 
 div > input {
@@ -86,6 +73,9 @@ div > input {
     outline: none;
 }
 
+div > input:focus {
+    border-bottom: 2px solid white;
+}
 div > input:hover {
     border-bottom: 2px solid white;
 }
@@ -97,6 +87,8 @@ div > #submit {
     padding: 5px;
     transition: 0.3s;
     width: 60%;
+    font-weight: 550;
+    border: 1.4px solid white;
 }
 
 div > #submit:hover {
@@ -105,5 +97,5 @@ div > #submit:hover {
 
 div > #submit:active {
     background-color: white;
-    box-shadow:0 0 5px black;
+    box-shadow:0 0 5px rgb(72, 72, 72);
 }
