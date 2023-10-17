@@ -16,7 +16,40 @@ img {
     width: 100px;
     border-radius: 50%;
     border: 2px solid white;
+    animation-duration: 3s;
+    animation-name: img-animation;
+    animation-iteration-count: infinite;
 }
+
+@keyframes img-animation {
+    0% {
+        -webkit-transform: rotate3d(1, 1, 0, 0deg);
+                transform: rotate3d(1, 1, 0, 0deg);
+      }
+      50% {
+        -webkit-transform: rotate3d(1, 1, 0, -180deg);
+                transform: rotate3d(1, 1, 0, -180deg);
+      }
+      100% {
+        -webkit-transform: rotate3d(1, 1, 0, -360deg);
+                transform: rotate3d(1, 1, 0, -360deg);
+      }
+    }
+    @keyframes rotate-diagonal-1 {
+      0% {
+        -webkit-transform: rotate3d(1, 1, 0, 0deg);
+                transform: rotate3d(1, 1, 0, 0deg);
+      }
+      50% {
+        -webkit-transform: rotate3d(1, 1, 0, -180deg);
+                transform: rotate3d(1, 1, 0, -180deg);
+      }
+      100% {
+        -webkit-transform: rotate3d(1, 1, 0, -360deg);
+                transform: rotate3d(1, 1, 0, -360deg);
+      }
+}
+
 
 h4{
     padding-left: 54px;
@@ -28,7 +61,7 @@ td {
 
 div {
     width: 400px;
-    height: 150px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,14 +70,38 @@ div {
     box-shadow:0 0 20px black;
     border-radius: 10px;
     padding: 10px;
-    background-color: aliceblue;
+    background-color: rgb(194, 212, 252);
 }
 
 div > p {
     text-align: center;
 }
 
-div > label {
-    text-align: center;
-    padding-bottom: 10px;
+div > input {
+    margin-bottom: 10px;
+    background-color: rgb(194, 212, 252);
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+div > input:hover {
+    border-bottom: 2px solid white;
+}
+
+div > #submit {
+    background-color: rgb(194, 212, 252);
+    border-radius: 5px;
+    border: 1px solid rgb(112, 112, 112);
+    padding: 5px;
+    transition: 0.3s;
+}
+
+div > #submit:hover {
+    background-color: white;
+}
+
+div > #submit:active {
+    background-color: white;
+    box-shadow:0 0 5px black;
 }
