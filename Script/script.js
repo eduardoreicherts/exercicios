@@ -3,4 +3,5 @@ let mainPage = document.querySelector('#main_page')
 
 changeTemeBtn.addEventListener("click", () => {
     mainPage.style.background = "radial-gradient(rgb(41, 41, 41) , rgb(0, 27, 85))"
+    mainPage.style.color = "white"
 });
