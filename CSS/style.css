@@ -4,13 +4,23 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
-#change_teme{
-    position: absolute;
-    left: 10px;
-    top: 10px;
+#escuro {
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    transition: 3s;
 }
 
-main {
+#claro {
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    display: none;
+    color: white;
+    transition: 3s;
+}
+
+#main_page {
     width: 100%;
     height: 150vh;
     display: flex;
@@ -18,11 +28,7 @@ main {
     align-items: center;
     justify-content: center;
     background: radial-gradient(white , rgb(194, 212, 252));
-}
-
-#main_page.black {
-    background: radial-gradient(rgb(41, 41, 41) , rgb(0, 27, 85));
-    color: white;
+    transition: 1s;
 }
 
 img {
@@ -70,6 +76,7 @@ div {
     padding: 10px;
     background-color: rgb(194, 212, 252);
     border: 1px solid white;
+    transition: 1s;
 }
 
 div > p {
@@ -80,7 +87,7 @@ div > p {
 div > input {
     width: 60%;
     margin-bottom: 10px;
-    background-color: rgb(194, 212, 252);
+    background-color: rgba(194, 212, 252, 0);
     border: none;
     border-bottom: 1px solid white;
     outline: none;
@@ -95,7 +102,7 @@ div > input:hover {
 }
 
 div > #submit {
-    background-color: rgb(194, 212, 252);
+    background-color: rgba(194, 212, 252, 0);
     border-radius: 5px;
     border: 1px solid rgb(112, 112, 112);
     padding: 5px;
@@ -103,6 +110,7 @@ div > #submit {
     width: 60%;
     font-weight: 550;
     border: 1.4px solid white;
+    color: rgb(116, 116, 116);
 }
 
 div > #submit:hover {

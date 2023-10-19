@@ -1,7 +1,27 @@
-let changeTemeBtn = document.querySelector('#change_teme');
+let escuro = document.querySelector('#escuro');
+let claro = document.querySelector('#claro')
 let mainPage = document.querySelector('#main_page')
+let formulario = document.querySelector('#formulario')
+let input = document.querySelector(".text")
 
-changeTemeBtn.addEventListener("click", () => {
+escuro.addEventListener("click", () => {
     mainPage.style.background = "radial-gradient(rgb(41, 41, 41) , rgb(0, 27, 85))"
     mainPage.style.color = "white"
+    formulario.style.background = "rgb(0, 27, 85)"
+    formulario.style.color = "white"
+    escuro.style.display = 'none'
+    claro.style.display = 'block'
+    input.style.color = 'white'
+    claro.style.left = '20px'
+    
+});
+
+claro.addEventListener("click", () => {
+    mainPage.style.background = "radial-gradient(white , rgb(194, 212, 252))"
+    mainPage.style.color = "black"
+    formulario.style.background = "rgb(194, 212, 252)"
+    formulario.style.color = "black"
+    claro.style.display = 'none'
+    escuro.style.display = 'block'
+    input.style.color = 'black'
 });
