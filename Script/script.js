@@ -5,19 +5,17 @@ let formulario = document.querySelector('#formulario')
 let input = document.querySelector(".text")
 
 escuro.addEventListener("click", () => {
-    mainPage.style.background = "radial-gradient(rgb(41, 41, 41) , rgb(0, 27, 85))"
+    mainPage.style.backgroundColor = "rgb(0, 27, 85)"
     mainPage.style.color = "white"
     formulario.style.background = "rgb(0, 27, 85)"
     formulario.style.color = "white"
     escuro.style.display = 'none'
     claro.style.display = 'block'
     input.style.color = 'white'
-    claro.style.left = '20px'
-    
 });
 
 claro.addEventListener("click", () => {
-    mainPage.style.background = "radial-gradient(white , rgb(194, 212, 252))"
+    mainPage.style.backgroundColor = "rgb(194, 212, 252)"
     mainPage.style.color = "black"
     formulario.style.background = "rgb(194, 212, 252)"
     formulario.style.color = "black"
