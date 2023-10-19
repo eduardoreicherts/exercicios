@@ -2,7 +2,7 @@ let escuro = document.querySelector('#escuro');
 let claro = document.querySelector('#claro')
 let mainPage = document.querySelector('#main_page')
 let formulario = document.querySelector('#formulario')
-let input = document.querySelector(".text")
+let input = document.querySelector('.text')
 
 escuro.addEventListener("click", () => {
     mainPage.style.backgroundColor = "rgb(0, 27, 85)"
