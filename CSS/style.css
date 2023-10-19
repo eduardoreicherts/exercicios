@@ -8,6 +8,7 @@
     position: fixed;
     top: 30px;
     left: 20px;
+    cursor: pointer;
 }
 
 #claro {
@@ -16,6 +17,7 @@
     left: 20px;
     display: none;
     color: white;
+    cursor: pointer;
 }
 
 #main_page {
@@ -110,6 +112,7 @@ div > #submit {
     font-weight: 550;
     border: 1.4px solid white;
     color: rgb(116, 116, 116);
+    cursor: pointer;
 }
 
 div > #submit:hover {
