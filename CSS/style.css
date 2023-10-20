@@ -121,5 +121,5 @@ div > #submit:hover {
 
 div > #submit:active {
     background-color: white;
-    box-shadow:0 0 5px rgb(72, 72, 72);
+    box-shadow:0 0 5px rgb(255, 255, 255);
 }
