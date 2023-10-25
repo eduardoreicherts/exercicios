@@ -67,7 +67,7 @@ function finishQuiz() {
   // Implementar condicionais para inserir mensagem e cor do placar de acordo com a pontuação.
   // Usar condicional if e condicionais <, <=, >, >=
   // Inserir a pontuação em .scorePct e o texto em .scoreText2
-  document.querySelector('.scorePct').innerHTML = score + '%'
+  document.querySelector('.scorePct').innerHTML = score + '%';
   if (score >= 100 ) {
     document.querySelector('.scoreText2').innerHTML = "Parabéns!!!";
     document.querySelector('scoreArea').style.backgroundColor = "green";
