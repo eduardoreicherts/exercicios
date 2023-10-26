@@ -70,13 +70,13 @@ function finishQuiz() {
   document.querySelector('.scorePct').innerHTML = score + '%';
   if (score >= 100 ) {
     document.querySelector('.scoreText2').innerHTML = "Parabéns!!!";
-    document.querySelector('scoreArea').style.backgroundColor = "green";
+    document.querySelector('.scorePct').style.color = "greenYellow";
   } else if(score >= 50) {
     document.querySelector('.scoreText2').innerHTML = "Muito bom!!!";
-    document.querySelector('.scoreArea').style.backgroundColor = "yellow";
+    document.querySelector('.scorePct').style.color = "yellow";
   } else {
     document.querySelector('.scoreText2').innerHTML = "Pode melhorar!!!";
-    document.querySelector('.scoreArea').style.backgroundColor = "red";
+    document.querySelector('.scorePct').style.color = "red";
   };
   
   // Ocultar a .questionArea e exibir a .scoreArea
@@ -91,6 +91,8 @@ function resetEvent() {
   // Redefina os valores de correctAnswers e currentQuestion para 0
   currentQuestion = 0
   correctAnswers = 0
+
+  
   // Chame a função showQuestion
   showQuestion()
 };
