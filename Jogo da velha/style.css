@@ -1,0 +1,115 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: rgb(89, 89, 89);
+}
+
+h1 {
+  color: white;
+  font-size:xx-large;
+}
+
+h2 {
+  color: white;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: large;
+  color: white;
+  transition: 500ms;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+button:hover {
+  font-size: x-large;
+  font-weight: 500;
+  text-shadow: 0 0 5px gray;
+}
+
+section {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+.game--container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 306px;
+  margin: 50px auto;
+}
+
+.cell {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  width: 100px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  line-height: 100px;
+  font-size: 60px;
+}
+
+#a0 {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+#a1 {
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+#a2 {
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+#a3 {
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+#a4 {
+  border: 2px solid white;
+}
+
+#a5 {
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+#a6 {
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
+
+#a7 {
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
+
+#a8 {
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+
+footer {
+  color: white;
+}
