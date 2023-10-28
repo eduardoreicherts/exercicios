@@ -53,7 +53,7 @@ li > a::after {
     margin: auto;
     height: 5px;
     width: 0;
-    top: 5px;
+    top: 10px;
     background: transparent;
     transition: all 0.3s;
     border-radius: 2px;
@@ -95,10 +95,10 @@ li > a::after {
 
     .topBar.responsive > ul {
       position: absolute;
-      top: 13%;
+      top: 0.5%;
       background: rgba(80, 79, 79, 0.8);
       height: 200px;
-      padding-top: 15px;
+      padding-top: 10%;
       padding-bottom: 10px;
       line-height: 5px;
       width: 100%;
@@ -107,7 +107,7 @@ li > a::after {
     .topBar.topBar.responsive  .icon {
       position: absolute;
       right: 0px;
-      top: 0px;
+      top: 10px;
     }
     .topBar.responsive li {
       text-align: center;
@@ -117,7 +117,7 @@ li > a::after {
     }
     .topBar.responsive li a {
       display: block;
-      padding: 0;
+      padding: 0px;
       text-align: center;
     }
   
@@ -128,7 +128,7 @@ li > a::after {
     }
     li > a:hover::after,
     li > a.active::after {
-      width: 20%;
+      width: 15%;
       background: #fff;
     }
   }
